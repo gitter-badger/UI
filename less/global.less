@@ -9,6 +9,8 @@ body {
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Clearfix
@@ -24,8 +26,7 @@ b, strong, .strong { &:extend(.font-bold); }
 i, em, .em { font-style: italic; }
 
 // Links
-a { color: @default-link-color; }
-a:hover { text-decoration: none; }
+a { color: @default-link-color; text-decoration: none;}
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 
@@ -80,7 +81,7 @@ hr {
   background: none;
   outline: 0;
   background-color: #ddd;
-  margin: 2em 0;
+  margin: 1em 0;
   *margin: 1em 0;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -91,9 +92,11 @@ hr {
 h1, h2, h3, h4, h5, h6 {
   font-family: @heading-font-family;
   line-height: normal;
-  font-weight: normal;
-
+  font-weight: bold;
   margin: 0 0 0.33em 0;
+  small {
+    font-weight: 300;
+  }
 }
 h1, .h1 {
   .font-size(@h1);
