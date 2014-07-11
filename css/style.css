@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4548,9 +4549,7 @@ a.list-group-item.active > .badge,
   padding-top: 240px;
   background-size: cover;
   background-position: center center;
-}
-.light {
-  color: #fff !important;
+  color: #fff;
 }
 .jbt-huge {
   padding-top: 90px;
