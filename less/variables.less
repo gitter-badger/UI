@@ -13,11 +13,9 @@
 @gray-light:             lighten(#000, 46.7%); // #777
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #47beec;
-@brand-primary-sec:     #58a4ef;
+@brand-primary:         #1EA4F0;
 
 @brand-warning:         #ec475e;
-@brand-warning-sec:     #ef6458;
 
 
 
@@ -144,18 +142,25 @@
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-border:             @btn-default-color;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-primary-border:             @btn-primary-bg;
 
 @btn-warning-color:              #fff;
 @btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             darken(@btn-warning-bg, 5%);
+@btn-warning-border:             @btn-warning-bg;
 
 @btn-link-disabled-color:        @gray-light;
 
+//== Footer
+//
+//##
+
+@footer-height: 60px;
+@footer-bg: #fff;
+@footer-color: @text-color;
 
 //== Forms
 //
