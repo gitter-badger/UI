@@ -42,10 +42,14 @@
 
 
 .jbt-huge {
-  padding-top:    (@jumbotron-padding * 3);
-  padding-bottom: (@jumbotron-padding * 3);
+  padding-top:    (@jumbotron-padding * 2);
+  padding-bottom: (@jumbotron-padding * 2);
   @media screen and (min-width: @screen-sm-min) {
-    padding-top:    (@jumbotron-padding * 10);
-    padding-bottom: (@jumbotron-padding * 10);
+    padding-top:    (@jumbotron-padding * 4);
+    padding-bottom: (@jumbotron-padding * 4);
+  }
+  @media screen and (min-width: @screen-md-min) {
+    padding-top:    (@jumbotron-padding * 6.7);
+    padding-bottom: (@jumbotron-padding * 6.7);
   }
 }
