@@ -2720,6 +2720,7 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
+  transition: 0.2s;
   padding: 6px 12px;
   font-size: 20px;
   line-height: 1.8;
