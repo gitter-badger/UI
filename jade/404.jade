@@ -6,5 +6,27 @@ block body
   .jumbotron
     .container
       h1 Error 404
-      p This page was not found.
+      p The page you’re looking for can’t be found.
+  .container
+    .row
+      .col-md-12
+        h3 Looking for one of these pages?
+    .row
+      .col-md-3
+        +list
+      .col-md-3
+        +list
+      .col-md-3
+        +list
+      .col-md-3
+        +list
 
+mixin list
+  h4 Crystals
+  ul.list-unstyled
+    li: a(href='#') Aquamarine
+    li: a(href='#') Kyanzite
+    li: a(href='#') Fluorite
+    li: a(href='#') Labradorite
+    li: a(href='#') Amber
+    li: a(href='#') Iolite

@@ -7,15 +7,15 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-@gray-darker:            lighten(#000, 5%); // #222
-@gray-dark:              lighten(#000, 15%);   // #333
-@gray:                   lighten(#000, 33.5%); // #555
-@gray-light:             lighten(#000, 46.7%); // #777
-@gray-lighter:           lighten(#000, 93.5%); // #eee
+@gray-darker:            #202123;
+@gray-dark:              #303235;
+@gray:                   #4f5258;
+@gray-light:             #6f747c;
+@gray-lighter:           #e8e9ea;
 
 @brand-primary:         #1EA4F0;
 
-@brand-warning:         #ec475e;
+@brand-secondary:         #ec475e;
 
 
 
@@ -148,18 +148,16 @@
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             @btn-primary-bg;
 
-@btn-warning-color:              #fff;
-@btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             @btn-warning-bg;
+@btn-secondary-color:              #fff;
+@btn-secondary-bg:                 @brand-secondary;
+@btn-secondary-border:             @btn-secondary-bg;
 
 @btn-link-disabled-color:        @gray-light;
 
 //== Footer
 //
 //##
-
-@footer-bg: #fff;
-@footer-color: @text-color;
+@footer-padding: 10px;
 
 //== Forms
 //
@@ -477,9 +475,9 @@
 @state-info-bg:                  #d9edf7;
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
-@state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
-@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-secondary-text:             #8a6d3b;
+@state-secondary-bg:               #fcf8e3;
+@state-secondary-border:           darken(spin(@state-secondary-bg, -10), 5%);
 
 @state-danger-text:              #a94442;
 @state-danger-bg:                #f2dede;
@@ -542,7 +540,7 @@
 //** Primary label background color
 @label-primary-bg:            @brand-primary;
 //** Warning label background color
-@label-warning-bg:            @brand-warning;
+@label-secondary-bg:            @brand-secondary;
 
 //** Default label text color
 @label-color:                 #fff;
@@ -599,9 +597,9 @@
 @alert-info-text:             @state-info-text;
 @alert-info-border:           @state-info-border;
 
-@alert-warning-bg:            @state-warning-bg;
-@alert-warning-text:          @state-warning-text;
-@alert-warning-border:        @state-warning-border;
+@alert-secondary-bg:            @state-secondary-bg;
+@alert-secondary-text:          @state-secondary-text;
+@alert-secondary-border:        @state-secondary-border;
 
 @alert-danger-bg:             @state-danger-bg;
 @alert-danger-text:           @state-danger-text;
@@ -620,7 +618,7 @@
 //** Default progress bar color
 @progress-bar-bg:             @brand-primary;
 //** Warning progress bar color
-@progress-bar-warning-bg:     @brand-warning;
+@progress-bar-secondary-bg:     @brand-secondary;
 
 
 //== List group
@@ -687,9 +685,9 @@
 @panel-info-border:           @state-info-border;
 @panel-info-heading-bg:       @state-info-bg;
 
-@panel-warning-text:          @state-warning-text;
-@panel-warning-border:        @state-warning-border;
-@panel-warning-heading-bg:    @state-warning-bg;
+@panel-secondary-text:          @state-secondary-text;
+@panel-secondary-border:        @state-secondary-border;
+@panel-secondary-heading-bg:    @state-secondary-bg;
 
 @panel-danger-text:           @state-danger-text;
 @panel-danger-border:         @state-danger-border;
