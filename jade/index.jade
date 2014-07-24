@@ -24,170 +24,40 @@ block body
         .col-md-12
           h3 Prebuilt pages
       .row
-        .col-md-4
-          .panel.panel-default
-            .panel-heading
-              h3.panel-title
-                a(href='#') Blog Index
-             .panel-body
-               | Blog index page showing posts.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Blog Index - Image
-             .panel-body
-               | Blog index page showing posts.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='blog-post.html') Blog Post
-             .panel-body
-               | An example post of a blog.
-               br
-               span.label.label-primary Work In Progress
-       .row
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='blog-post_image.html') Blog Post - Image
-             .panel-body
-               | An example post of a blog.
-               br
-               span.label.label-primary Work In Progress
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Contact Page
-             .panel-body
-               | Page with contact form.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Team Page
-             .panel-body
-               | Page showing team members.
-               br
-               span.label.label-default Not Started
-       .row
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Blog Post - Image
-             .panel-body
-               | An example post of a blog.
-               br
-               span.label.label-default Not Started
-          .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Forum Index
-             .panel-body
-               | An example post of a blog.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Forum Post
-             .panel-body
-               | Page with contact form.
-               br
-               span.label.label-default Not Started
-       .row
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Forum Post - Image
-             .panel-body
-               | Page showing team members.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Shop Index
-             .panel-body
-               | Homepage of a webshop.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Shop Products
-             .panel-body
-               | Page showing multiple products.
-               br
-               span.label.label-default Not Started
-       .row
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Shop Product
-             .panel-body
-               | Page to show a single product.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Gallery
-             .panel-body
-               | Image gallery / Portfolio.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Search Results
-             .panel-body
-               | Page displaying search results.
-               br
-               span.label.label-default Not Started
-       .row
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='404.html') Error pages
-             .panel-body
-               | Page to show a single product.
-               br
-               span.label.label-primary Work In Progress
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Profile Page
-             .panel-body
-               | Page showing a users profile.
-               br
-               span.label.label-default Not Started
-         .col-md-4
-           .panel.panel-default
-             .panel-heading
-               h3.panel-title
-                 a(href='#') Coming soon...
-             .panel-body
-               | There will be more.
-               br
-               span.label.label-default Not Started
+        +panel-n('Blog Index', 'Blog index page showing posts.')
+        +panel-n('Blog Index - Image', 'Blog index page showing posts.')
+        +panel-n('Blog Post', 'An example post of a blog.')
+        +panel-n('Blog Post - Image', 'An example post of a blog.')
+        +panel-n('Contact Page', 'Page with contact form.')
+        +panel-n('Team Page', 'Page showing team members.')
+        +panel-n('Forum Index', 'page showing latest forum posts.')
+        +panel-n('Forum Post', 'Page showing single forum post.')
+        +panel-n('Forum Post - Image', 'Page showing single forum post.')
+        +panel-n('Shop Index', 'Homepage of a webshop.')
+        +panel-n('Shop Products', ' Page showing multiple products.')
+        +panel-n('Shop product', 'Page to show a single product.')
+        +panel-n('Gallery', 'Image gallery / portfolio.')
+        +panel-n('Search Results', 'Page dispalying search results.')
+        +panel-s('404.html', 'Error pages', 'Page displaying server error.')
+        +panel-n('Profile Page', 'Page showing a user profile.')
+
+mixin panel-n(name, desc)
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title
+          a(href='#')= name
+      .panel-body= desc
+        br
+        span.label.label-default Not Started
+
+
+mixin panel-s(href, name, desc)
+  .col-md-4
+    .panel.panel-default
+      .panel-heading
+        h3.panel-title
+          a(href=href)= name
+      .panel-body= desc
+        br
+        span.label.label-primary Work In Progress
