@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <title>LymUI - Blog Post.</title>
   </head>
   <body>
@@ -18,8 +17,17 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
+            <li class="disabled"><a href="#">Link</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Link</a></li>
+                <li class="divider"></li>
+                <li class="disabled"><a href="#">Link</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>
@@ -63,7 +71,7 @@
       </article>
     </div>
     <footer>
-      <div class="container"><small>Made by <a href="mailto:leon@makes.coffe">Leon Koole</a>
+      <div class="container"><small>Made by <a href="mailto:leon@makes.coffee">Leon Koole</a>
           <div class="pull-right">© lym<strong>UI</strong></div></small></div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

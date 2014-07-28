@@ -5,7 +5,6 @@ html
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='css/style.css')
-    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')
     block head
   body
     nav.navbar.navbar-default
@@ -23,20 +22,34 @@ html
               a(href='#') Link
             li
               a(href='#') Link
-            li
+            li.disabled
               a(href='#') Link
-            li
-              a(href='#') Link
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown') Dropdown
+                span.caret
+              ul.dropdown-menu(role='menu')
+                li.active
+                  a(href='#') Link
+                li
+                  a(href='#') Link
+                li.divider
+                li
+                  a(href='#') Link
+                li.divider
+                li.disabled
+                  a(href='#') Link
+
+
 
     block body
 
     footer
-     .container
-      small
-        | Made by 
-        a(href='mailto:leon@makes.coffee') Leon Koole
-        .pull-right © lym
-          strong UI
+      .container
+        small
+          | Made by 
+          a(href='mailto:leon@makes.coffee') Leon Koole
+          .pull-right © lym
+            strong UI
     //- UI.min.js can be replaced with any Bootstrap 3 JS to add or remove components
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
     script(src='js/UI.min.js')

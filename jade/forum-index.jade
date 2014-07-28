@@ -1,0 +1,51 @@
+extends template
+
+block head
+  title LymUI - Forum Index.
+block body
+  .jumbotron
+    .container
+      h1 Forums
+      p Welcome to our community
+  .container
+    .forum-list
+      +topic
+      +topic
+      +topic
+      +topic
+      +topic
+      +topic
+      +topic
+      +topic
+      +topic
+      +topic
+    ul.pager
+      li.previous.disabled
+        a(href='#') Older
+      li.next
+        a(href='#') Newer
+
+
+mixin topic
+  .topic.panel.panel-default
+    .panel-body
+      .pull-left
+        .topic-title
+          a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        .topic-meta By 
+          a(href='#') Leon Koole 
+          span.label.label-default
+            i.fa.fa-clock-o
+            |  13d
+      .pull-right
+        .topic-replied 
+          a(href='#') John Doe 
+          | posted 
+          a.label.label-default
+            i.fa.fa-clock-o
+            |  12h
+        .topic-stats.pull-right
+          i.fa.fa-eye
+          | 11 
+          i.fa.fa-comments-o
+          | 139
