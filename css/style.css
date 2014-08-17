@@ -486,10 +486,6 @@ p {
     font-size: 27px;
   }
 }
-article p,
-.post {
-  font-family: 'PT Serif', serif;
-}
 small,
 .small {
   font-size: 88%;
