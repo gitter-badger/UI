@@ -212,5 +212,24 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/UI.min.js"></script>
+    <script src="js/perfbar.js"></script>
+    <script type="text/javascript">
+      perfBar.init({
+        budget: {
+        }
+      });
+      var err = perfBar.addMetric({
+        id: 'Performance',
+        label: 'UI Performace Testing',
+        value: 18,
+        budget: {
+          max: 20,
+          min: 1
+        }
+      });
+      
+      if ( !err ) console.log('Woho all is ok!');
+      
+    </script>
   </body>
 </html>
