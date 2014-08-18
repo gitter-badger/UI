@@ -57,18 +57,8 @@ html
     script(type='text/javascript').
       perfBar.init({
         budget: {
-        }
-      });
-      var err = perfBar.addMetric({
-        id: 'Performance',
-        label: 'UI Performace Testing',
-        value: 18,
-        budget: {
-          max: 20,
+          max: 10,
           min: 1
         }
       });
-
-      if ( !err ) console.log('Woho all is ok!');
-
     block footer

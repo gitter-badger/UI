@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LymUI - Contact Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand">lym<strong>UI</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="disabled"><a href="#">Link</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu">
+                <li class="active"><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Link</a></li>
+                <li class="divider"></li>
+                <li class="disabled"><a href="#">Link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Get in touch</h1>
+        <p>Email us or visit the office</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="Enter name" required="required" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="Email">Email Adress</label>
+                  <input id="email" type="text" placeholder="Enter email" required="required" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" required="required" class="form-control">
+                    <option value="na" selected="">Choose One:</option>
+                    <option value="service">Product 1 Support</option>
+                    <option value="suggestions">Product 2 Support</option>
+                    <option value="product">General Questions</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea id="message" name="message" rows="7" cols="25" required="required" placeholder="Message" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <button id="btnContactUs" type="submit" class="btn btn-primary pull-right">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-9">
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfdUFVM0JsQbab3JWZ9K8loOnXdPqci9s&amp;sensor=false&amp;extension=.js"></script>
+          <script type="text/javascript">
+            google.maps.event.addDomListener(window, 'load', init);
+            var map;
+            function init() {
+            var mapOptions = {
+            center: new google.maps.LatLng(51.524512,-0.158164),
+            zoom: 15,
+            zoomControl: false,
+            disableDoubleClickZoom: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: false,
+            draggable : false,
+            overviewMapControl: false,
+            overviewMapControlOptions: {
+            opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.TERRAIN,
+            styles: [
+            {
+            "featureType": "poi",
+            "stylers": [
+            { "visibility": "off" }
+            ]
+            },{
+            "stylers": [
+            { "saturation": -70 },
+            { "lightness": 37 },
+            { "gamma": 1.15 }
+            ]
+            },{
+            "elementType": "labels",
+            "stylers": [
+            { "gamma": 0.26 },
+            { "visibility": "off" }
+            ]
+            },{
+            "featureType": "road",
+            "stylers": [
+            { "lightness": 0 },
+            { "saturation": 0 },
+            { "hue": "#ffffff" },
+            { "gamma": 0 }
+            ]
+            },{
+            "featureType": "road",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+            { "visibility": "off" }
+            ]
+            },{
+            "featureType": "road.arterial",
+            "elementType": "geometry",
+            "stylers": [
+            { "lightness": 20 }
+            ]
+            },{
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+            { "lightness": 50 },
+            { "saturation": 0 },
+            { "hue": "#ffffff" }
+            ]
+            },{
+            "featureType": "administrative.province",
+            "stylers": [
+            { "visibility": "on" },
+            { "lightness": -50 }
+            ]
+            },{
+            "featureType": "administrative.province",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+            { "visibility": "off" }
+            ]
+            },{
+            "featureType": "administrative.province",
+            "elementType": "labels.text",
+            "stylers": [
+            { "lightness": 20 }
+            ]
+            }
+            ],
+            }
+            var mapElement = document.getElementById('location');
+            var map = new google.maps.Map(mapElement, mapOptions);
+            var locations = [
+            ['lymUI Headquarters', 'undefined', 'undefined', 'undefined', 'undefined', 51.5238101, -0.1584409]
+            ];
+            for (i = 0; i < locations.length; i++) {
+            if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+            if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+            if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+            if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+            marker = new google.maps.Marker({
+            icon: 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png',
+            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+            map: map,
+            title: locations[i][0],
+            desc: description,
+            tel: telephone,
+            email: email,
+            web: web
+            });
+            }
+            }
+          </script>
+          <style>
+            #location {
+            height:400px;
+            width:100%;
+            }
+            .gm-style-iw * {
+            display: block;
+            width: 100%;
+            }
+            .gm-style-iw h4, .gm-style-iw p {
+            margin: 0;
+            padding: 0;
+            }
+            .gm-style-iw a {
+            color: #4272db;
+            }
+          </style>
+          <div id="location"></div>
+        </div>
+        <div class="col-md-3">
+          <address><strong>Twitter, Inc.</strong><br>795 Folsom Ave, Suite 600<br>San Francisco, CA 94107<br><abbr title="Phone">P:</abbr>(123) 456-7890</address>
+          <address><strong>Full Name</strong><br><a href="mailto:#">first.last@example.com</a></address>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container"><small>Made by <a href="mailto:leon@makes.coffee">Leon Koole</a>
+          <div class="pull-right">© lym<strong>UI</strong></div></small></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/UI.min.js"></script>
+    <script src="js/perfbar.js"></script>
+    <script type="text/javascript">
+      perfBar.init({
+        budget: {
+          max: 10,
+          min: 1
+        }
+      });
+    </script>
+  </body>
+</html>
