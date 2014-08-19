@@ -1,0 +1,72 @@
+//
+// Loaders
+// --------------------------------------------------
+
+
+// Pulse
+// -------------------------
+.loader-pulse {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-animation: loader-pulse 1s cubic-bezier(.9,.11,.63,.78) infinite;
+  animation: loader-pulse 1s cubic-bezier(.9,.11,.63,.78) infinite;
+  top: 50%;
+  left: 50%;
+}
+
+.loader-pulse.line{
+  border: 3px solid @brand-primary;
+}
+
+.loader-pulse.line.sec{
+  border: 3px solid @brand-secondary;
+}
+
+.loader-pulse.full{
+  background-color: @brand-primary;
+}
+
+.loader-pulse.full.sec{
+  background-color: @brand-secondary;
+}
+
+.loader-pulse.small{
+  width: 30px;
+  height: 30px;
+}
+
+
+@-webkit-keyframes loader-pulse {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(.8);
+  }
+  25%{
+    -webkit-transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(.5);
+  }
+}
+
+@keyframes loader-pulse {
+  0% {
+    opacity: 1;
+    transform: scale(.8);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(.5);
+  }
+}
