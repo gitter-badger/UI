@@ -29,23 +29,26 @@ block body
 mixin topic
   .topic.panel.panel-default
     .panel-body
-      .pull-left
-        .topic-title
-          a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        .topic-meta By 
-          a(href='#') Leon Koole 
-          span.label.label-default
-            i.fa.fa-clock-o
-            |  13d
-      .pull-right
-        .topic-replied 
-          a(href='#') John Doe 
-          | posted 
-          a.label.label-default
-            i.fa.fa-clock-o
-            |  12h
-        .topic-stats.pull-right
-          i.fa.fa-eye
-          | 11 
-          i.fa.fa-comments-o
-          | 139
+      .row
+        .col-xs-8
+          .pull-left
+            .topic-title
+              a(href='#') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .topic-meta By 
+              a(href='#') Leon Koole 
+              span.label.label-default
+                i.fa.fa-clock-o
+                |  13d
+        .col-xs-4
+          .pull-right
+            .topic-replied 
+              a(href='#') John Doe 
+              | posted 
+              a.label.label-default
+                i.fa.fa-clock-o
+                |  12h
+            .topic-stats.pull-right
+              i.fa.fa-eye
+              | 11 
+              i.fa.fa-comments-o
+              | 139
