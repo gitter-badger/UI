@@ -9,21 +9,6 @@ block body
       p A page to display all different elements of UI
   .container
     .page-header
-      h2 Loaders
-    .row
-      .col-md-2
-        .loader-pulse.line
-      .col-md-2
-        .loader-pulse.line.sec
-      .col-md-2
-        .loader-pulse.full
-      .col-md-2
-        .loader-pulse.full.sec
-      .col-md-2
-        .loader-pulse.line.small
-      .col-md-2
-        .loader-pulse.full.sec.small
-    .page-header
       h2 Progress bars
     .row
       .col-md-6
@@ -40,3 +25,35 @@ block body
         .progress
           .progress-bar(style='width: 30%;')
           .progress-bar.progress-bar-secondary(style='width: 40%;')
+    .page-header
+      h2 Loaders
+    .row
+      .col-md-2.col-xs-6
+        .loader-pulse.line
+      .col-md-2.col-xs-6
+        .loader-pulse.line.sec
+      .col-md-2.col-xs-6
+        .loader-pulse.full
+      .col-md-2.col-xs-6
+        .loader-pulse.full.sec
+      .col-md-2.col-xs-6
+        .loader-pulse.line.small
+      .col-md-2.col-xs-6
+        .loader-pulse.full.sec.small
+    .page-header
+      h2 Buttons
+    .row
+      .col-md-3.col-xs-6
+        button.btn.btn-default Button
+      .col-md-3.col-xs-6
+        button.btn.btn-primary Button
+      .col-md-3.col-xs-6
+        button.btn.btn-secondary Button
+      .col-md-3.col-xs-6
+        button.btn.btn-inverse Button
+    hr
+    .row
+      .col-md-6
+        button.btn.btn-primary.btn-block.disabled Button
+      .col-md-6
+        button.btn.btn-secondary.btn-block.active Button
