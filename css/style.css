@@ -6595,61 +6595,98 @@ button.close {
 .topic .topic-title {
   font-weight: bold;
 }
-.loader-pulse {
-  background: transparent;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.loader-dots,
+.loader-dots::before,
+.loader-dots::after {
+  background-color: #e8e9ea;
+  display: block;
+  content: ' ';
   position: relative;
-  -webkit-animation: loader-pulse 1s cubic-bezier(0.9, 0.11, 0.63, 0.78) infinite;
-  animation: loader-pulse 1s cubic-bezier(0.9, 0.11, 0.63, 0.78) infinite;
-  top: 50%;
-  left: 50%;
-}
-.loader-pulse.line {
-  border: 3px solid #1ea4f0;
-}
-.loader-pulse.line.sec {
-  border: 3px solid #ec475e;
-}
-.loader-pulse.full {
-  background-color: #1ea4f0;
-}
-.loader-pulse.full.sec {
-  background-color: #ec475e;
-}
-.loader-pulse.small {
   width: 30px;
   height: 30px;
+  left: 0px;
+  border-radius: 50%;
+  -webkit-animation: loader-dots 3s ease infinite;
+  animation: loader-dots 3s ease infinite;
 }
-@-webkit-keyframes loader-pulse {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0.8);
-  }
-  25% {
-    -webkit-transform: scale(1);
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: scale(0.5);
-  }
+.loader-dots::before {
+  left: 40px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
-@keyframes loader-pulse {
+.loader-dots::after {
+  left: 80px;
+  top: -30px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+@-webkit-keyframes loader-dots {
   0% {
-    opacity: 1;
-    transform: scale(0.8);
+    background-color: #e8e9ea;
+  }
+  15% {
+    background-color: #1ea4f0;
   }
   50% {
-    opacity: 0;
-    transform: scale(1);
+    background-color: #e8e9ea;
   }
-  100% {
-    opacity: 1;
-    transform: scale(0.5);
+}
+@keyframes loader-dots {
+  0% {
+    background-color: #e8e9ea;
+  }
+  15% {
+    background-color: #1ea4f0;
+  }
+  50% {
+    background-color: #e8e9ea;
+  }
+}
+.loader-dots-sec,
+.loader-dots-sec::before,
+.loader-dots-sec::after {
+  background-color: #e8e9ea;
+  display: block;
+  content: ' ';
+  position: relative;
+  width: 30px;
+  height: 30px;
+  left: 0px;
+  border-radius: 50%;
+  -webkit-animation: loader-dots-sec 3s ease infinite;
+  animation: loader-dots-sec 3s ease infinite;
+}
+.loader-dots-sec::before {
+  left: 40px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.loader-dots-sec::after {
+  left: 80px;
+  top: -30px;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+@-webkit-keyframes loader-dots-sec {
+  0% {
+    background-color: #e8e9ea;
+  }
+  15% {
+    background-color: #ec475e;
+  }
+  70% {
+    background-color: #e8e9ea;
+  }
+}
+@keyframes loader-dots-sec {
+  0% {
+    background-color: #e8e9ea;
+  }
+  15% {
+    background-color: #ec475e;
+  }
+  70% {
+    background-color: #e8e9ea;
   }
 }
 footer {
