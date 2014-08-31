@@ -1,28 +1,33 @@
 //
 // Loaders
 // --------------------------------------------------
+@loader-size: 20px;
+@loader-spacing: 10px;
+@loader-time: 2.5s;
+
+
 .loader-dots, .loader-dots::before, .loader-dots::after {
   background-color: @gray-lighter;
   display: block;
   content: ' ';
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: @loader-size;
+  height: @loader-size;
   left: 0px;
   border-radius: 50%;
-  -webkit-animation: loader-dots 3s ease infinite;
-  animation: loader-dots 3s ease infinite;
+  -webkit-animation: loader-dots @loader-time ease infinite;
+  animation: loader-dots @loader-time ease infinite;
 }
 .loader-dots::before {
-  left: 40px;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  left: (@loader-size+@loader-spacing);
+  -webkit-animation-delay: (@loader-time / 3);
+  animation-delay: (@loader-time / 3);
 }
 .loader-dots::after {
-  left: 80px;
-  top: -30px;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  left: 2*(@loader-size+@loader-spacing);
+  top: -@loader-size;
+  -webkit-animation-delay: 2*(@loader-time / 3);
+  animation-delay: 2*(@loader-time / 3);
 }
 
 @-webkit-keyframes loader-dots {
@@ -54,23 +59,23 @@
   display: block;
   content: ' ';
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: @loader-size;
+  height: @loader-size;
   left: 0px;
   border-radius: 50%;
-  -webkit-animation: loader-dots-sec 3s ease infinite;
-  animation: loader-dots-sec 3s ease infinite;
+  -webkit-animation: loader-dots-sec @loader-time ease infinite;
+  animation: loader-dots-sec @loader-time ease infinite;
 }
 .loader-dots-sec::before {
-  left: 40px;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  left: (@loader-size+@loader-spacing);
+  -webkit-animation-delay: (@loader-time / 3);
+  animation-delay: (@loader-time / 3);
 }
 .loader-dots-sec::after {
-  left: 80px;
-  top: -30px;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  left: 2*(@loader-size+@loader-spacing);
+  top: -@loader-size;
+  -webkit-animation-delay: 2*(@loader-time / 3);
+  animation-delay: 2*(@loader-time / 3);
 }
 
 @-webkit-keyframes loader-dots-sec {
