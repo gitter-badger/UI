@@ -9,16 +9,8 @@ block body
       p Welcome to our community
   .container
     .forum-list
-      +topic
-      +topic
-      +topic
-      +topic
-      +topic
-      +topic
-      +topic
-      +topic
-      +topic
-      +topic
+      while t < 10
+        +topic
     ul.pager
       li.previous.disabled
         a(href='#') Older
