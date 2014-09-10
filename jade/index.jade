@@ -3,45 +3,47 @@ extends template
 block head
   title LymUI - The next evolution in frameworks.
 block body
-  .jumbotron.jbt-huge.text-center.pattern
+  .jumbotron.jbt-huge.text-center.gray-bg
     .container
-      h1 Simple as fuck front-end framework.
+      .text-huge.home-logo UI
+        .smile
+      h1 Bla bla. Bla bla blabla. Bla bla-bla.
       p A free frontend framework and template based on Bootstrap.
       p
         a(href='http://github.com/LymXX/UI').btn.btn-primary View on Github
   .container
-      .row
-        .col-md-4
-          h3 Built on Bootstrap
-          p lymUI is being built from the source of Bootstrap. This makes it easy to learn and fast to use. Maybe it will even have its own documentation.
-        .col-md-4
-          h3 Looking good
-          p Aiming for a simple look, lymUI removes all unnecessary styles from Bootstrap and replaces many with some good looking new elements.
-        .col-md-4
-          h3 Time saving
-          p lymUI comes with many prebuilt webpages coded in Jade (also preprocessed to HTML), saving you time and work.
-      .row
-        .col-md-12
-          h3 Prebuilt pages
-      .row
-        +panel-s('/','Home page', 'Framework homepage.')
-        +panel-s('blog-index.html', 'Blog Index', 'Blog index page showing posts.')
-        +panel-s('blog-post.html','Blog Post', 'An example post of a blog.')
-        +panel-s('blog-post_image.html','Blog Post - Image', 'An example post of a blog.')
-        +panel-s('contact.html', 'Contact Page', 'Page with contact form.')
-        +panel-n('Team Page', 'Page showing team members.')
-        +panel-s('forum-index.html', 'Forum Index', 'page showing latest forum posts.')
-        +panel-n('Forum Post', 'Page showing single forum post.')
-        +panel-n('Forum Post - Image', 'Page showing single forum post.')
-        +panel-n('Shop Index', 'Homepage of a webshop.')
-        +panel-n('Shop Products', ' Page showing multiple products.')
-        +panel-n('Shop product', 'Page to show a single product.')
-        +panel-n('Gallery', 'Image gallery / portfolio.')
-        +panel-n('Search Results', 'Page dispalying search results.')
-        +panel-s('404.html', 'Error pages', 'Page displaying server error.')
-        +panel-n('Profile Page', 'Page showing a user profile.')
-        +panel-n('Email template', 'Page to be used for emails')
-        +panel-s('elements.html', 'Elements', 'Some of the elements for style testing.')
+    .row
+      .col-md-4
+        h3 Built on Bootstrap
+        p lymUI is being built from the source of Bootstrap. This makes it easy to learn and fast to use. Maybe it will even have its own documentation.
+      .col-md-4
+        h3 Looking good
+        p Aiming for a simple look, lymUI removes all unnecessary styles from Bootstrap and replaces many with some good looking new elements.
+      .col-md-4
+        h3 Time saving
+        p lymUI comes with many prebuilt webpages coded in Jade (also preprocessed to HTML), saving you time and work.
+    .row
+      .col-md-12
+        h3 Prebuilt pages
+    .row
+      +panel-s('/','Home page', 'Framework homepage.')
+      +panel-s('blog-index.html', 'Blog Index', 'Blog index page showing posts.')
+      +panel-s('blog-post.html','Blog Post', 'An example post of a blog.')
+      +panel-s('blog-post_image.html','Blog Post - Image', 'An example post of a blog.')
+      +panel-s('contact.html', 'Contact Page', 'Page with contact form.')
+      +panel-n('Team Page', 'Page showing team members.')
+      +panel-s('forum-index.html', 'Forum Index', 'page showing latest forum posts.')
+      +panel-n('Forum Post', 'Page showing single forum post.')
+      +panel-n('Forum Post - Image', 'Page showing single forum post.')
+      +panel-n('Shop Index', 'Homepage of a webshop.')
+      +panel-n('Shop Products', ' Page showing multiple products.')
+      +panel-n('Shop product', 'Page to show a single product.')
+      +panel-n('Gallery', 'Image gallery / portfolio.')
+      +panel-n('Search Results', 'Page dispalying search results.')
+      +panel-s('404.html', 'Error pages', 'Page displaying server error.')
+      +panel-n('Profile Page', 'Page showing a user profile.')
+      +panel-n('Email template', 'Page to be used for emails')
+      +panel-s('elements.html', 'Elements', 'Some of the elements for style testing.')
 
 mixin panel-n(name, desc)
   .col-md-4.col-sm-6
