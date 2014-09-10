@@ -42,8 +42,8 @@ block body
       .col-md-9
         .panel.panel-default
           script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBfdUFVM0JsQbab3JWZ9K8loOnXdPqci9s&sensor=false&extension=.js')
-          script(type='text/javascript')
-              google.maps.event.addDomListener(window, 'load', init);
+          script(type='text/javascript').
+            google.maps.event.addDomListener(window, 'load', init);
               var map;
               function init() {
               var mapOptions = {
