@@ -22,3 +22,24 @@
     }
   }
 }
+
+.home-box {
+  .border-top-radius(@border-radius-base);
+  background-color: @gray;
+  color: #fff;
+  padding: 20px;
+  p {
+    font-size: 2em;
+  }
+  .fa {
+    font-size: 5em;
+  }
+}
+
+.home-box-active {
+  background-color: @brand-primary;
+}
+
+.home-box-list .list-group-item:first-child {
+  .border-top-radius(0);
+}

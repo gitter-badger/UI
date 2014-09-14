@@ -26,42 +26,67 @@ block body
       .col-md-12
         h3 Prebuilt pages
     .row
-      +panel-s('/','Home page', 'Framework homepage.')
-      +panel-s('blog-index.html', 'Blog Index', 'Blog index page showing posts.')
-      +panel-s('blog-post.html','Blog Post', 'An example post of a blog.')
-      +panel-s('blog-post_image.html','Blog Post - Image', 'An example post of a blog.')
-      +panel-s('contact.html', 'Contact Page', 'Page with contact form.')
-      +panel-n('Team Page', 'Page showing team members.')
-      +panel-s('forum-index.html', 'Forum Index', 'page showing latest forum posts.')
-      +panel-n('Forum Post', 'Page showing single forum post.')
-      +panel-n('Forum Post - Image', 'Page showing single forum post.')
-      +panel-n('Shop Index', 'Homepage of a webshop.')
-      +panel-n('Shop Products', ' Page showing multiple products.')
-      +panel-n('Shop product', 'Page to show a single product.')
-      +panel-n('Gallery', 'Image gallery / portfolio.')
-      +panel-n('Search Results', 'Page dispalying search results.')
-      +panel-s('404.html', 'Error pages', 'Page displaying server error.')
-      +panel-n('Profile Page', 'Page showing a user profile.')
-      +panel-n('Email template', 'Page to be used for emails')
-      +panel-s('elements.html', 'Elements', 'Some of the elements for style testing.')
-
-mixin panel-n(name, desc)
-  .col-md-4.col-sm-6
-    .panel.panel-default
-      .panel-heading
-        h3.panel-title
-          a(href='#')= name
-      .panel-body= desc
-        br
-        span.label.label-default Not Started
-
-
-mixin panel-s(href, name, desc)
-  .col-md-4.col-sm-6
-    .panel.panel-default
-      .panel-heading
-        h3.panel-title
-          a(href=href)= name
-      .panel-body= desc
-        br
-        span.label.label-primary Work In Progress
+      .col-md-4.col-sm-6
+        .home-box.home-box-active.text-center
+          i.fa.fa-pencil
+          p Blog
+        .list-group.home-box-list
+          a.list-group-item(href='blog-index.html') Blog Index
+          a.list-group-item(href='blog-post.html') Blog Post
+          a.list-group-item(href='blog-post_image.html') Blog Post - Image
+          a.list-group-item(href='') Archieve
+            span.badge X
+          a.list-group-item(href='contact.html') Contact
+      .col-md-4.col-sm-6
+        .home-box.home-box-active.text-center
+          i.fa.fa-group
+          p Community
+        .list-group.home-box-list
+          a.list-group-item(href='forum-index.html') Forum Index 
+          a.list-group-item(href='') Forum Post
+            span.badge X
+          a.list-group-item(href='') Forum Post - Image
+            span.badge X
+          a.list-group-item(href='') Profile Page
+            span.badge X
+          a.list-group-item(href='') Team Page
+            span.badge X
+      .col-md-4.col-sm-6
+        .home-box.text-center
+          i.fa.fa-shopping-cart
+          p Shop
+        .list-group.home-box-list
+          a.list-group-item(href='') Shop Index
+            span.badge X
+          a.list-group-item(href='') Products List
+            span.badge X
+          a.list-group-item(href='') Single Product
+            span.badge X
+          a.list-group-item(href='') Basket
+            span.badge X
+          a.list-group-item(href='') Search Results
+            span.badge X
+      .col-md-4.col-sm-6
+        .home-box.text-center
+          i.fa.fa-camera
+          p Photography
+        .list-group.home-box-list
+          a.list-group-item(href='') Photo Index
+            span.badge X
+          a.list-group-item(href='') Album
+            span.badge X
+          a.list-group-item(href='') Single Picture
+            span.badge X
+          a.list-group-item(href='') Archieve
+            span.badge X
+      .col-md-4.col-sm-6
+        .home-box.text-center
+          i.fa.fa-list
+          p Misc
+        .list-group.home-box-list
+          a.list-group-item(href='404.html') Error page
+            span.badge X
+          a.list-group-item(href='') Email template
+            span.badge X
+          a.list-group-item(href='elements.html') Elements
+            span.badge X
