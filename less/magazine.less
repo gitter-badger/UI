@@ -1,0 +1,96 @@
+//
+// Magazine homepage styling
+// --------------------------------------------------
+
+.magazine-fig {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  background: @gray;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+  img {
+    position: relative;
+    display: block;
+    min-width: 100%;
+    height: -webkit-calc(100% + 50px);
+    height: calc(100% + 50px);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,-40px, 0);
+    transform: translate3d(0,-40px,0);
+  }
+  figcaption {
+    padding: 2em;
+    color: #fff;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: auto;
+    bottom: 0;
+    height: 50%;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    &::before,
+    &::after {
+      pointer-events: none;
+    }
+  }
+  a { 
+    position: absolute;
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+  h2 {
+    font-weight: 300;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+  }
+  h2,
+  p {
+    margin: 0; 
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,40px,0);
+  }
+  p {
+    font-size: 68.5%;
+    color: rgba(255,255,255,0.6);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+    }
+    p {
+      opacity: 1;
+    }
+    img,
+    h2,
+    p {
+      -webkit-transform: translate3d(0,0,0);
+      transform: translate3d(0,0,0);
+    }
+    p {
+      -webkit-transition-delay: 0.05s;
+      transition-delay: 0.05s;
+      -webkit-transition-duration: 0.35s;
+      transition-duration: 0.35s;
+    }
+  }
+}
+.magazine-fig-small {
+  height: 300px;
+}

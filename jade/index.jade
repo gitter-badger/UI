@@ -3,7 +3,7 @@ extends template
 block head
   title LymUI - The next evolution in frameworks.
 block body
-  .jumbotron.jbt-huge.text-center.gray-bg
+  header.jbt-huge.text-center.gray-bg
     .container
       .text-huge.home-logo UI
         .smile
@@ -29,14 +29,13 @@ block body
       .col-md-4.col-sm-6
         .home-box.home-box-active.text-center
           i.fa.fa-pencil
-          p Blog
+          p Magazine
         .list-group.home-box-list
-          a.list-group-item(href='blog-index.html') Blog Index
-          a.list-group-item(href='blog-post.html') Blog Post
-          a.list-group-item(href='blog-post_image.html') Blog Post - Image
+          a.list-group-item(href='blog-index.html') Magazine Index
+          a.list-group-item(href='blog-post.html') Article
+          a.list-group-item(href='blog-post_image.html') Article - Image
           a.list-group-item(href='') Archieve
             span.badge X
-          a.list-group-item(href='contact.html') Contact
       .col-md-4.col-sm-6
         .home-box.home-box-active.text-center
           i.fa.fa-group
@@ -88,3 +87,4 @@ block body
           a.list-group-item(href='') Email template
             span.badge X
           a.list-group-item(href='elements.html') Elements
+          a.list-group-item(href='contact.html') Contact
