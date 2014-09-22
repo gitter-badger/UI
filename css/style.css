@@ -5141,6 +5141,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
+  border-radius: 4px;
 }
 .magazine-fig img {
   position: relative;
@@ -5885,6 +5886,9 @@ a.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+}
+.panel-body-small {
+  padding: 7.5px 15px;
 }
 .panel-heading {
   padding: 10px 15px;
@@ -6815,7 +6819,9 @@ footer {
 .pager:before,
 .pager:after,
 .panel-body:before,
-.panel-body:after {
+.panel-body:after,
+.panel-body-small:before,
+.panel-body-small:after {
   content: " ";
   display: table;
 }
@@ -6832,7 +6838,8 @@ footer {
 .navbar-header:after,
 .navbar-collapse:after,
 .pager:after,
-.panel-body:after {
+.panel-body:after,
+.panel-body-small:after {
   clear: both;
 }
 .center-block {
