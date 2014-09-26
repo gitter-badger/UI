@@ -16,16 +16,15 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="/">Home</a></li>
-            <li><a href="#">Link</a></li>
-            <li class="disabled"><a href="#">Link</a></li>
-            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<span class="caret"></span></a>
+            <li><a href="elements.html">Elements</a></li>
+            <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Magazine<span class="caret"></span></a>
               <ul role="menu" class="dropdown-menu">
-                <li class="active"><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="mag-index.html">Index</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Link</a></li>
+                <li><a href="mag-article.html">Article</a></li>
+                <li><a href="mag-article_image.html">Article - Image</a></li>
                 <li class="divider"></li>
-                <li class="disabled"><a href="#">Link</a></li>
+                <li class="disabled"><a href="archieve.html">Archieve</a></li>
               </ul>
             </li>
           </ul>
@@ -89,7 +88,16 @@
           <button class="btn btn-primary">Button</button>
         </div>
         <div class="col-md-3 col-xs-6">
-          <button class="btn btn-secondary">Button</button>
+          <div class="dropdown">
+            <button id="dropdownMenu1" type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">Button<span class="caret"></span></button>
+            <ul role="menu" aria-labelledby="dropdownMenu1" class="dropdown-menu">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+              <li role="presentation" class="divider"></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-3 col-xs-6">
           <button class="btn btn-inverse">Button</button>
