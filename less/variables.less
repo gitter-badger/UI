@@ -148,16 +148,24 @@
 @btn-primary-bg:                 @brand-primary;
 @btn-primary-border:             @btn-primary-bg;
 
-@btn-secondary-color:              #fff;
-@btn-secondary-bg:                 @brand-secondary;
-@btn-secondary-border:             @btn-secondary-bg;
+@btn-secondary-color:            #fff;
+@btn-secondary-bg:               @brand-secondary;
+@btn-secondary-border:           @btn-secondary-bg;
 
 @btn-link-disabled-color:        @gray-light;
+
+//== Loaders
+//
+//##
+
+@loader-size: 					20px;
+@loader-spacing: 				10px;
+@loader-time: 					2.5s;
 
 //== Footer
 //
 //##
-@footer-padding: 10px;
+@footer-padding: 				10px;
 
 //== Forms
 //
@@ -201,28 +209,24 @@
 //## Dropdown menu container and contents.
 
 //** Background for the dropdown menu.
-@dropdown-bg:                    #fff;
-//** Dropdown menu `border-color`.
-@dropdown-border:                rgba(0,0,0,.15);
-//** Dropdown menu `border-color` **for IE8**.
-@dropdown-fallback-border:       #ccc;
+@dropdown-bg:                    @brand-primary;
 //** Divider color for between dropdown items.
-@dropdown-divider-bg:            #e5e5e5;
+@dropdown-divider-bg:            lighten(@brand-primary, 10%);
 
 //** Dropdown link text color.
-@dropdown-link-color:            @gray-dark;
+@dropdown-link-color:            #fff;
 //** Hover color for dropdown links.
 @dropdown-link-hover-color:      darken(@gray-dark, 5%);
 //** Hover background for dropdown links.
 @dropdown-link-hover-bg:         #f5f5f5;
 
 //** Active dropdown menu item text color.
-@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-color:     #fff;
 //** Active dropdown menu item background color.
-@dropdown-link-active-bg:        @component-active-bg;
+@dropdown-link-active-bg:        transparent;
 
 //** Disabled dropdown menu item background color.
-@dropdown-link-disabled-color:   @gray-light;
+@dropdown-link-disabled-color:   lighten(@brand-primary, 30%);
 
 //** Text color for headers within dropdown menus.
 @dropdown-header-color:          @gray-light;
@@ -340,10 +344,10 @@
 
 // Navbar links
 @navbar-default-link-color:                @text-color;
-@navbar-default-link-hover-color:          lighten(@text-color, 30%);
-@navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         @navbar-default-link-color;
-@navbar-default-link-active-bg:            transparent;
+@navbar-default-link-hover-color:          #fff;
+@navbar-default-link-hover-bg:             @brand-primary;
+@navbar-default-link-active-color:         #fff;
+@navbar-default-link-active-bg:            @brand-primary;
 @navbar-default-link-disabled-color:       #ccc;
 @navbar-default-link-disabled-bg:          transparent;
 
@@ -355,9 +359,6 @@
 // Navbar toggle
 @navbar-default-toggle-hover-bg:           #ddd;
 @navbar-default-toggle-icon-bar-bg:        #888;
-@navbar-default-toggle-border-color:       #ddd;
-
-
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      @gray-light;
