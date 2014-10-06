@@ -713,6 +713,7 @@ address {
 .text-huge {
   font-size: 7em;
   font-weight: bold;
+  line-height: 1em;
 }
 code,
 kbd,
@@ -4945,6 +4946,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default {
   background-color: #ffffff;
+  border-bottom: #e8e9ea 1px solid;
 }
 .navbar-default .navbar-brand {
   color: #303235;
@@ -5109,7 +5111,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   backface-visibility: hidden;
   top: auto;
   bottom: 0;
-  height: 50%;
   text-align: left;
   position: absolute;
   left: 0;
@@ -7039,22 +7040,6 @@ textarea.max {
   .hidden-print {
     display: none !important;
   }
-}
-.home-logo .smile {
-  background-color: #f4f4f4;
-  display: inline-block;
-  position: relative;
-  width: 85px;
-  height: 0px;
-  margin-bottom: 43px;
-  margin-left: -150px;
-  -webkit-transition: height 0.2s;
-  transition: height 0.2s;
-}
-.home-logo:hover .smile {
-  -webkit-transition: height 0.2s;
-  transition: height 0.2s;
-  height: 20px;
 }
 .home-box {
   border-top-right-radius: 4px;
