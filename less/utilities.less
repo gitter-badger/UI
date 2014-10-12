@@ -56,7 +56,8 @@
   .translate3d(0, 0, 0);
 }
 
-// Add sublte background color
+// Different background colors
+// -------------------------
 .gray-bg {
   background-color: @gray-dark;
   color: #fff;
@@ -78,7 +79,11 @@
 }
 
 .light-gray-bg {
-  background-color: @gray-lighter;
+  background-color: darken(@gray-lighter, 10%);
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 .primary-bg {

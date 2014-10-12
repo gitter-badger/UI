@@ -9,6 +9,12 @@ footer {
 .footer-top {
   padding-top: @footer-padding;
   padding-bottom: @footer-padding;
+  a {
+  	color: #B0B0B0;
+  	&:hover, &:focus {
+  		color: darken(@gray-light, 10%);
+  	}
+  }
 }
 .footer-bottom {
   padding-top: @footer-padding;
