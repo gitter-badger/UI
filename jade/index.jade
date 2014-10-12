@@ -3,7 +3,7 @@ extends template
 block head
   title LymUI - The next evolution in frameworks.
 block body
-  header.jbt-huge.text-center.image.image-light(style='background-image: url(img/home-bg.jpg);')
+  header.jbt-huge.text-center.primary-bg
     .container
       .text-huge UI
       h1 Short description here
@@ -25,17 +25,17 @@ block body
         h3 Prebuilt pages
     .row
       .col-md-4.col-sm-6
-        .home-box.home-box-active.text-center
+        .home-box.text-center.primary-bg
           i.fa.fa-pencil
           p Magazine
         .list-group.home-box-list
           a.list-group-item(href='mag-index.html') Magazine Index
           a.list-group-item(href='mag-article.html') Article
           a.list-group-item(href='mag-article_image.html') Article - Image
-          a.list-group-item.disabled(href='') archive
+          a.list-group-item.disabled(href='') Archive
             span.badge X
       .col-md-4.col-sm-6
-        .home-box.home-box-active.text-center
+        .home-box.text-center.primary-bg
           i.fa.fa-group
           p Community
         .list-group.home-box-list
@@ -49,7 +49,7 @@ block body
           a.list-group-item.disabled(href='') Team Page
             span.badge X
       .col-md-4.col-sm-6
-        .home-box.text-center
+        .home-box.text-center.gray-bg
           i.fa.fa-shopping-cart
           p Shop
         .list-group.home-box-list
@@ -64,7 +64,7 @@ block body
           a.list-group-item.disabled(href='') Search Results
             span.badge X
       .col-md-4.col-sm-6
-        .home-box.text-center
+        .home-box.text-center.gray-bg
           i.fa.fa-camera
           p Photography
         .list-group.home-box-list
@@ -77,12 +77,12 @@ block body
           a.list-group-item.disabled(href='') archive
             span.badge X
       .col-md-4.col-sm-6
-        .home-box.active.text-center
+        .home-box.text-center.primary-bg
           i.fa.fa-list
           p Misc
         .list-group.home-box-list
           a.list-group-item(href='404.html') Error page
-          a.list-group-item.disabled(href='') Email template
+          a.list-group-item.disabled(href='') Email Template
             span.badge X
           a.list-group-item(href='elements.html') Elements
           a.list-group-item(href='contact.html') Contact
