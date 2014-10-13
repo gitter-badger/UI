@@ -56,11 +56,45 @@
   .translate3d(0, 0, 0);
 }
 
-// Add sublte background color
+// Different background colors
+// -------------------------
 .gray-bg {
-  background-color: #f4f4f4;
+  background-color: @gray-dark;
+  color: #fff;
 }
 
+.primary-bg {
+  background-color: @brand-primary;
+  color: #fff;
+}
+
+.secondary-bg {
+  background-color: @brand-secondary;
+  color: #fff;
+}
+
+.gray-bg {
+  background-color: @gray-dark;
+  color: #fff;
+}
+
+.light-gray-bg {
+  background-color: darken(@gray-lighter, 10%);
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.primary-bg {
+  background-color: @brand-primary;
+  color: #fff;
+}
+
+.secondary-bg {
+  background-color: @brand-secondary;
+  color: #fff;
+}
 // Form helpers
 // -------------------------
 textarea.max {
